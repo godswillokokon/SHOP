@@ -1067,7 +1067,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12">
-                        <form action="#">
+                        <form>
 
 
 
@@ -1111,7 +1111,8 @@
                                             <div class="form-group">
                                                 <div class="select-multiple">
                                                     <label>Tags</label>
-                                                    <select class="select2_tagged form-control" name="states[]">
+                                                    <select class="select2_tagged form-control" name="states[]"
+                                                        id="tags">
                                                         <option value="html">HTML</option>
                                                         <option value="psd">PSD</option>
                                                         <option value="js">JavaScript</option>
@@ -1166,144 +1167,14 @@
 
 
     <footer class="footer-area footer--light">
-        <div class="footer-big">
-            <!-- start .container -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget">
 
-                            <div class="widget-about">
-                                <img src="img/footer-logo.png" alt="" class="img-fluid">
-                                <p>Pellentesque facilisis the ullamcorp keer sapien interdum is the magna pellentesque
-                                    kequis
-                                    hasellus keur condimentum eleifend.</p>
-                                <ul class="contact-details">
-                                    <li>
-                                        <span class="icon-earphones"></span>
-                                        Call Us:
-                                        <a href="tel:344-755-111">344-755-111</a>
-                                    </li>
-                                    <li>
-                                        <span class="icon-envelope-open"></span>
-                                        <a href="mailto:support@aazztech.com">support@aazztech.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- Ends: .footer-widget -->
-                    </div>
-                    <!-- end /.col-md-4 -->
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget">
-                            <div class="footer-menu footer-menu--1">
-                                <h5 class="footer-widget-title">Popular Category</h5>
-                                <ul>
-                                    <li>
-                                        <a href="#">Wordpress</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Plugins</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Joomla Template</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Admin Template</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">HTML Template</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end /.footer-menu -->
-                        </div>
-                        <!-- Ends: .footer-widget -->
-                    </div>
-                    <!-- end /.col-md-3 -->
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget">
-                            <div class="footer-menu">
-                                <h5 class="footer-widget-title">Our Company</h5>
-                                <ul>
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">How It Works</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Affiliates</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Testimonials</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Plan & Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end /.footer-menu -->
-                        </div>
-                        <!-- Ends: .footer-widget -->
-                    </div>
-                    <!-- end /.col-lg-3 -->
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget">
-                            <div class="footer-menu no-padding">
-                                <h5 class="footer-widget-title">Help Support</h5>
-                                <ul>
-                                    <li>
-                                        <a href="#">Support Forum</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Terms & Conditions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Support Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Refund Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Buyers Faq</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sellers Faq</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end /.footer-menu -->
-                        </div>
-                        <!-- Ends: .footer-widget -->
-                    </div>
-                    <!-- Ends: .col-lg-3 -->
-                </div>
-                <!-- end /.row -->
-            </div>
-            <!-- end /.container -->
-        </div>
-        <!-- end /.footer-big -->
 
         <div class="mini-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="copyright-text">
-                            <p>&copy; 2018
+                            <p>&copy; 2020
                                 <a href="#">DigiPro</a>. All rights reserved. Created by
                                 <a href="#">AazzTech</a>
                             </p>
@@ -1327,8 +1198,23 @@
     <script src="js/script.min.js"></script>
 
     <!-- endinject-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+    <script src="./config/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+
+    <script type="text/javascript" src="scripts/upload.js"></script>
+    <script type="text/javascript" src="scripts/auth.js"></script>
+
+
 </body>
 
-<!-- Mirrored from aazztech.com/demos/themes/html/digipro/dist/dashboard-upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Dec 2019 00:43:25 GMT -->
 
 </html>

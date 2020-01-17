@@ -34,7 +34,7 @@ signupForm.addEventListener("submit", e => {
           // setupUI(cred);
 
           return db
-            .collection("users")
+            .collection("vendors")
             .doc(cred.user.email)
             .set({
               Uname

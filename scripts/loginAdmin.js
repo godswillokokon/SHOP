@@ -35,11 +35,16 @@ loginForm.addEventListener("submit", e => {
         "user",
         firebase.auth().currentUser
       );
+      let currentUserEmail = sessionStorage.setItem(
+        "username",
+        email
+      );
 
       location.href = "dashboard.html";
     })
     .catch(err => {
       console.log(err);
+      alert("err:", err)
     });
 });
 
