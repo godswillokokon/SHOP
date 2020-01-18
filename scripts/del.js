@@ -2,14 +2,17 @@
 function del() {
 
   let hold = document.getElementById("bttn").value;
-  db.collection("posts").doc(hold).delete().then(function () {
+  console.log(hold, "hold");
+
+  db.collection("products").doc(hold).delete().then(function () {
     alert("Document successfully deleted!");
   }).catch(function (error) {
     alert("Error removing document: ", error);
   });
 
+
   db
-    .collection('posts')
+    .collection('products')
     .onSnapshot(
       doc => {
         let data = doc.docs;
@@ -19,5 +22,5 @@ function del() {
         console.log(err);
       }
     );
-
 }
+
