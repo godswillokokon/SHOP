@@ -30,10 +30,7 @@ const setupContent = data => {
 
                                         <div class="options dropdown-menu" aria-labelledby="drop_1">
                                             <ul>
-                                                <li class="dropdown-item">
-                                                    <a href="edit-item.html?${id}">
-                                                        <span class="icon-pencil"></span>Edit</a>
-                                                </li>
+                                                
                                                 
                                                 <li class="dropdown-item">
                                                     <button  class="btn btn-danger" onclick="del()" value="${id}"  id="bttn">Delete</button>
