@@ -1,5 +1,5 @@
-const content = document.querySelector('#products');
-
+const content = document.querySelector('#content');
+let nameID = sessionStorage.getItem("username");
 
 const setupContent = data => {
   let html = '';
@@ -9,7 +9,7 @@ const setupContent = data => {
     let title = data.data().title;
     let date = new Date(data.data().date).toDateString();
     let price = data.data().price;
-    let tag = data.data().tag;
+    let productID = data.data().productID;
     let description = data.data().description;
     let vendor = data.data().vendor;
     let buyer = data.data().buyer;
@@ -17,7 +17,14 @@ const setupContent = data => {
 
 
     const div = `
-     
+     <tr>
+                        <td>${id}</td>
+                        <td>${dateSold}</td>
+                        <td class="bold">${price}</td>
+                        <td class="bold">
+                            ${title}
+                        </td>
+                    </tr>
     `;
     html += div;
   });
@@ -28,9 +35,10 @@ const setupContent = data => {
 
 
 };
-// let level = sessionStorage.getItem("userLevel");
+
 let first = db
   .collection('sold')
+  .where("buyer", "==", nameID)
   .orderBy('dateSold', 'asc')
   .onSnapshot(
     doc => {

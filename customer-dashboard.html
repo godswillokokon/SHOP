@@ -1007,12 +1007,7 @@
                             <li class="active">
                                 <a href="customer-dashboard.html"><span class="lnr icon-basket"></span>Purchase History</a>
                             </li>
-                            <li>
-                                <a href="customer-downloads.html"><span class="lnr icon-cloud-download"></span>Downloads</a>
-                            </li>
-                            <li>
-                                <a href="customer-info.html"><span class="lnr icon-settings"></span>Account Info</a>
-                            </li>
+                           
                         </ul><!-- ends: .dashboard_menu -->
                     </div><!-- ends: .col-md-12 -->
                 </div><!-- ends: .row -->
@@ -1036,59 +1031,12 @@
                         <th>ID</th>
                         <th>Date</th>
                         <th>Amount</th>
-                        <th>Details</th>
+                        <th>Product</th>
                     </tr>
                     </thead>
 
-                    <tbody>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#6576</td>
-                        <td>09 Jul 2017</td>
-                        <td class="bold">$18.50</td>
-                        <td class="bold">
-                            <a href="#">View Details and Downloads</a>
-                        </td>
-                    </tr>
+                    <tbody id="content">
+                    
                     </tbody>
                 </table>
             </div>
@@ -1267,7 +1215,22 @@
      <script src="js/script.min.js"></script>
 
      <!-- endinject-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+        
+        <script src="./config/index.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+        
+      
+        
+        <script type="text/javascript" src="scripts/customer-dash.js"></script>
+        <script type="text/javascript" src="scripts/auth.js"></script>
 </body>
 
-<!-- Mirrored from aazztech.com/demos/themes/html/digipro/dist/customer-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Dec 2019 00:43:33 GMT -->
 </html>
