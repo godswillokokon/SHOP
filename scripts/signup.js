@@ -43,13 +43,14 @@ signupForm.addEventListener("submit", e => {
         .catch(function (error) {
           console.log(error);
         });
+      let nameSession = sessionStorage.setItem("username", Uname);
 
       console.log(cred.user);
 
 
       console.log(Uname);
 
-      let nameSession = sessionStorage.setItem("username", name);
+
       location.href = "index.html";
     })
     .catch(err => {

@@ -17,7 +17,6 @@ if (!currentUser) {
 
 
 
-
 function logout() {
   //  e.preventDefault();
   // clearCookie();

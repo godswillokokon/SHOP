@@ -35,6 +35,10 @@ loginForm.addEventListener("submit", e => {
         "user",
         firebase.auth().currentUser
       );
+      sessionStorage.setItem(
+        "username",
+        email
+      );
 
       location.href = "index.html";
     })

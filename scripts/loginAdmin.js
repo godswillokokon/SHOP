@@ -40,7 +40,7 @@ loginForm.addEventListener("submit", e => {
         email
       );
 
-      location.href = "dashboard.html";
+      location.href = "dashboard-manage-item.html";
     })
     .catch(err => {
       console.log(err);
