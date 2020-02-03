@@ -1,8 +1,12 @@
+const buy = document.querySelector(".setting_form");
+buy.addEventListener("submit", e => {
+  e.preventDefault();
 
-function buy() {
-  location.href = "checkout.html";
   let hold = document.getElementById("bttn").value;
-  console.log(hold, "hold");
+  let first = document.getElementById("first_name").value;
+  let last = document.getElementById("last_name").value;
+  let email = document.getElementById("email1").value;
+
   let buyer = sessionStorage.getItem("username");
 
   db.collection("products")
@@ -24,6 +28,9 @@ function buy() {
         .collection("sold")
         .doc()
         .set({
+          first,
+          last,
+          email,
           productID,
           preview,
           title,
@@ -51,8 +58,8 @@ function buy() {
     });
 
 
+  location.href = "index.html";
 
 
-
-}
+});
 

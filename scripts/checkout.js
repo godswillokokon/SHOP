@@ -1,4 +1,5 @@
 const rrr = document.querySelector("#sale");
+const subb = document.querySelector("#sub");
 
 
 
@@ -36,6 +37,16 @@ db.collection("products")
                                     </li>
       `;
     rrr.innerHTML = htmlQues;
+
+    const subm = `
+    <div class="form-group">
+                                                <label for="cv_code">CVV Code</label>
+                                                <input id="cv_code" type="text" class="text_field"
+                                                    placeholder="Enter code here...">
+                                            </div>
+ <button  class="btn btn-danger" type="submit" value="${id}"  id="bttn">Confirm Order</button>
+      `;
+    sub.innerHTML = subm;
 
 
 
