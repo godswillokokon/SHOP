@@ -26,7 +26,8 @@ const setupContent = data => {
                                                     <figcaption>
                                                         <ul class="list-unstyled">
                                                             <li>
-                                                             <button  class="btn btn-danger" onclick="del()" value="${id}"  id="bttn"><span class="icon-basket"> Buy </span></button>
+                                                            
+                                                              <a href="./checkout.html?${id}" class="btn btn-danger"  id="bttn"><span class="icon-basket"> Buy </span></a>
                                                              </li>
                                                             
                                                         </ul>
@@ -41,13 +42,11 @@ const setupContent = data => {
                                                 <ul class="titlebtm">
                                                     <li>
                                                         <img class="auth-img" src="${preview}" alt="author image">
-                                                        <p><a href="#"> ${description}</a></p>
+                                                        <p><a href="#"><strong>Posted:</strong>  ${date}</a></p>
                                                        
                                                         
                                                     </li>
-                                                     <li>
-     <p><a href="#"><strong>Posted:</strong>  ${date}</a></p>
-                                                     </li>
+                                                
                                                     
                                                 </ul>
                                                 <ul class="product-facts clearfix">

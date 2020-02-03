@@ -1,6 +1,6 @@
 
-function del() {
-
+function buy() {
+  location.href = "checkout.html";
   let hold = document.getElementById("bttn").value;
   console.log(hold, "hold");
   let buyer = sessionStorage.getItem("username");
