@@ -18,8 +18,9 @@ db.collection("products")
     let tag = data.data().tag;
     let description = data.data().description;
     let vendor = data.data().vendor;
-    let tax = price * 5 / 100
-    let total = price + tax
+    let tax = price * 5 / 100;
+    let integer = parseInt(price, 10);
+    let total = integer + tax;
 
 
     const htmlQues = `
